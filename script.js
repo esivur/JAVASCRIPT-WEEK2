@@ -60,7 +60,7 @@ if (months == 1){
 
 let students =[["Tien", "Do", "22"], ["John", "Doe", "23"], ["Joseph", "Gribble", "17"]];
 
-console.log ("Hello, my name is {students[1][0]} {students[1][1]} and Im {students[1][2]} years old"); 
+console.log ('Hello, my name is ${students[1][0]} ${students[1][1]} and Im ${students[1][2]} years old'); 
 
 
 
