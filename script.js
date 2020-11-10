@@ -58,9 +58,14 @@ if (months == 1){
 
 /* EASY CHALLENGE */ 
 
-let students =[["Tien", "Do", "22"], ["John", "Doe", "23"], ["Joseph", "Gribble", "17"]];
+var name1 = "Tien Do";
+var name2 = "John Doe";
+var name3 = "Joseph Gribble"; 
+var age1 = 22;
+var age2 = 23;
+var age3 = 17;
 
-console.log ('Hello, my name is ${students[1][0]} ${students[1][1]} and Im ${students[1][2]} years old'); 
+console.log("Hello my name is " +name2, "and I'm " +age2, "years old");
 
 
 
