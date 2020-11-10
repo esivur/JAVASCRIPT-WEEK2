@@ -1,21 +1,55 @@
 
 /* HARD CHALLEGE */
 
-const massTom = 8;
-const heightTom = 9;
-const massJerry = 45;
-const heightJerry = 10;
+let tomMass = 8;
+let tomHeight = 9;
+let jerryMass = 1;
+let jerryHeight = 4;
 
-const BMITom = massTom / heightTom ** 2;
-const BMIJerry = massJerry / (heightJerry * heightJerry);
-const tomHigherBMI = BMITom > BMIJerry;
-console.log(BMITom, BMIJerry);
+let tomBMI = tomMass / tomHeight ** 2;
+let jerryBMI = jerryMass/ jerryHeight ** 2;
+
+let higherBMI;
+if (tomBMI > jerryBMI) {
+    higherBMI = 'Tom has a higher BMI'
+}else{
+    higherBMI = 'Jerry has a higher BMI'
+}
+console.log(higherBMI);
 
 
 
 /* MEDIUM CHALLENGE */
 
-var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+let months = prompt("Please enter a number between 1-12.");
+
+if (months == 1){
+    console.log("January")
+}else if (months == 2){
+    console.log("February")
+}else if (months == 3){
+    console.log("March")
+}else if (months == 4){
+    console.log("April")
+}else if (months == 5){
+    console.log("May")
+}else if (months == 6){
+    console.log("June")
+}else if (months == 7){
+    console.log("July")
+}else if (months == 8){
+    console.log("August")
+}else if (months == 9){
+    console.log("September")
+}else if (months == 10){
+    console.log("October")
+}else if (months == 11){
+    console.log("November")
+}else if (months == 12){
+    console.log("December")
+}else {
+    console.log("Please enter a Number between 1-12.")
+}
 
 
 
@@ -24,9 +58,9 @@ var months = ["January", "February", "March", "April", "May", "June", "July", "A
 
 /* EASY CHALLENGE */ 
 
-var students = ["Tien Do 22", "Michael Jordan 23", "Joseph Gribble 17"];
+let students =[["Tien", "Do", "22"], ["John", "Doe", "23"], ["Joseph", "Gribble", "17"]];
 
-console.log(students [1]= "Hello, my name is Michael Jordan and I'm Number 23.");
+console.log ("Hello, my name is {students[1][0]} {students[1][1]} and Im {studenet[1][2]} years old"); 
 
 
 
@@ -35,14 +69,14 @@ console.log(students [1]= "Hello, my name is Michael Jordan and I'm Number 23.")
 /* VERY EASY CHALLENGE */ 
 
 function min( firstNum, secondNum) {
-    if ( firstNum < secondNum) 
-    return firstNum;
-    else
-    return secondNum;
+  let minTotal = Math.min(firstNum, secondNum);
+  console.log(minTotal);
 }
+min(2, 7);
 
-console.log(min(0,10));
-console.log(min(0, -10));
+
+
+
 
 
 
